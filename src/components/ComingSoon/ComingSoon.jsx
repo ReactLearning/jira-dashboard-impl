@@ -12,19 +12,10 @@ class ComingSoon extends React.Component
   render()
   {
 
-    fetch("https://jira.ibaset.com/rest/auth/latest/session",{
-      method:'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: {
-        "username":"papatel",
-        "password" : "orbitparth"
-      }}).then(result => console.log(result));
+    
 
-    // fetch("https://jira.ibaset.com/rest/api/2/filter/12791")
-    //   .then(result => result.json())
+     fetch("http://localhost:4000/filter/12791")
+       .then(result => result.json());
     //   .then(data => data.jql)
     //   .then(jql => fetch("https://jira.ibaset.com/rest/api/2/search",{
     //     method:'POST',
