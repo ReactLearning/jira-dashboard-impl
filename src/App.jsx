@@ -6,7 +6,7 @@ import Image from 'grommet/components/Image';
 import { RoutedAnchor } from 'grommet/components/Anchor';
 import Stack from 'grommet/components/Stack';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import ComingSoon from './components/ComingSoon';
+import JiraBoard from './components/JiraBorad';
 import Home from './components/Home';
 
 
@@ -20,13 +20,13 @@ const App = (props) => (
         <Box tag='header' direction='row' fixed={true} className="top-hader">          
           <Box className="menu-bar" full="horizontal" align="center" direction="row" justify="center">
           <RoutedAnchor path="/">Home</RoutedAnchor>
-          <RoutedAnchor path="/filter">ComingSoon</RoutedAnchor>
+          <RoutedAnchor path="/jiraBoard">JiraBoard</RoutedAnchor>
           </Box>
         </Box>
         <Box tag="section" pad={{horizontal: 'xlarge', bottom:'xlarge'}} className="content-data">
           <Box>
           <Route path="/" exact component={Home} />
-          <Route path="/filter" exact component={ComingSoon} />
+          <Route path="/jiraBoard" exact component={JiraBoard} />
           </Box>
         </Box>
       </Box>
