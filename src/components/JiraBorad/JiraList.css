@@ -1,0 +1,19 @@
+.jiraPriority
+{
+    text-align : center;
+}
+.jiraPriority img
+{
+    height: 16px;
+    width: 16px;    
+}
+.jiraBorad
+{
+    width: 100%;
+    border: black solid 1px;    
+}
+.jiraBoradHeader
+{
+    font-weight: bold;
+    border: dimgrey solid 1px;  
+}
