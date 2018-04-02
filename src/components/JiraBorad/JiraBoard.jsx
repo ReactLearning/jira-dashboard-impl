@@ -27,8 +27,8 @@ class JiraBoard extends React.Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        "username": "papatel",
-        "password": "p$63562dha"
+        "username": "username",
+        "password": "password"
       }),
       json: true
     }).then(result => result.json())
