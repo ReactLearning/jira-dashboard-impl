@@ -1,3 +1,3 @@
-import JiraBoard from './JiraBoard';
+import ImplJiraBoard from './ImplJiraBoard';
 
-export default JiraBoard;
+export default ImplJiraBoard;

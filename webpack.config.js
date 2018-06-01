@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: ['babel-polyfill','./src/index.jsx'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -20,6 +20,7 @@ module.exports = {
         }) 
       },
       { test: /\.jpg?$/, loaders: ['file-loader'] },
+      { test: /\.json$/, loader: 'json-loader' }
     ]
   },
   plugins: [
@@ -33,7 +34,6 @@ module.exports = {
   ],
   devServer: {
     contentBase: './dist',
-    port: 8085,
-    historyApiFallback: true
+    port: 8085
   },
 };

@@ -17,3 +17,12 @@
     font-weight: bold;
     border: dimgrey solid 1px;  
 }
+.wordwrap {
+    white-space: pre-line !important;
+    word-wrap: break-word;
+}
+input[type='text'], select
+{
+    font-family: 'Work Sans',Arial,sans-serif;
+    font-size: 1em;
+}
