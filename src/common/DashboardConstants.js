@@ -3,7 +3,7 @@ export const buildWorkLogJql = (fromDate, thruDate) =>
     
 };
 
-export const jiraPrefixUrl = "http://jira.ibaset.com/browse/";
+export const jiraPrefixUrl = "http://jira.site.com/browse/";
 export const jiraServerUrl = "http://192.168.9.214:4000/";
 
 export const jiraBoardInfo = "Use exisisting JIRA filter and render data in tabular format having "
